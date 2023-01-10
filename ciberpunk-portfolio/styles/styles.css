@@ -1,0 +1,108 @@
+/* General style */
+
+.text-primary {
+  color: #00ff9d;
+}
+
+h1 {
+  font-family: "Roboto", sans-serif;
+  color: #ee6eff;
+}
+
+h6 {
+  font-family: "Roboto Mono", monospace;
+  color: #ee6eff;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+h5 {
+  font-family: "Roboto Mono", monospace;
+  color: #ffffff;
+}
+
+a {
+  color: #00ff9d;
+}
+
+p {
+  color: #75c2ff;
+  font-size: 20px;
+}
+
+button {
+  margin-top: 15px;
+  background-color: #00ff9d;
+  border-radius: 0.85em;
+  padding: 0.75em 1.5em;
+  color: #372963;
+}
+/* Container */
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.left-side-container {
+  width: 300px;
+  background-color: #372963;
+  height: 100vw;
+}
+
+#fotoAvatar {
+  padding-top: 20px;
+  width: 250px;
+  height: auto;
+  filter: contrast(-50%);
+}
+
+/* Menu */
+
+.menu-container {
+  text-align: center;
+  margin-top: 40px;
+  margin: 50px 30px;
+}
+
+.menu {
+  font-size: 20px;
+  color: #b08bff;
+  font-family: "Roboto Mono", monospace;
+  margin-bottom: 25px;
+}
+
+.menu:hover {
+  color: aqua;
+}
+
+/* Rigth-container */
+.right-side-container {
+  background-color: #102336;
+  width: 100%;
+}
+.right-side-container h1 {
+  font-size: 6rem;
+}
+
+/* Welcome-section */
+.welcome-cv-section {
+  margin: 50px 40px;
+}
+
+.welcome-cv-section .subtitle {
+  font-family: "Roboto Mono", monospace;
+  color: aqua;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+/* About me */
+
+.about-me-container {
+  text-align: left;
+  margin-top: 40px;
+  margin: 50px 30px;
+}

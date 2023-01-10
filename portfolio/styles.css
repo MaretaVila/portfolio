@@ -1,3 +1,8 @@
+:root {
+  --main-bg-button: #ff5757;
+  --main-text-h2: #ff914d;
+}
+
 /* navbar */
 .navbar {
   padding: 2rem;
@@ -26,7 +31,27 @@ h2 {
   font-weight: 600;
 }
 
-btn-info .dark-section {
+p {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+}
+
+a {
+  color: #ff5757;
+  text-decoration: underline;
+}
+
+.btn-info {
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Roboto Mono", monospace;
+  color: #f5f6f7;
+  background-color: var(--main-bg-button);
+  border: none;
+  margin-bottom: 30px;
+}
+
+.dark-section {
   background-color: #1b1c1e;
   color: #f5f6f7;
 }
@@ -60,7 +85,9 @@ btn-info .dark-section {
 }
 .text-section {
   font-size: 1.2rem;
+  letter-spacing: 1px;
   font-family: "Quicksand", sans-serif;
+  font-weight: 200;
   height: auto;
 }
 
@@ -84,15 +111,19 @@ btn-info .dark-section {
 
 .hero-principal h2 {
   font-size: 1.5rem;
-  color: #2e2e2e;
-  font-family: "Quicksand", sans-serif;
-  font-weight: 400;
+  color: var(--main-text-h2);
+  font-family: "Roboto Mono", monospace;
+  font-weight: 200;
 }
 
 .hero-inferior {
   background-color: #f5f6f7;
   width: 60%;
   height: auto;
+}
+
+.hero-subtitle h2 {
+  color: #ff914d;
 }
 
 /* About me section */
@@ -102,7 +133,6 @@ btn-info .dark-section {
 
 .about-me .contenedor {
   max-width: 900px;
-
   text-align: center;
 }
 
@@ -147,7 +177,7 @@ btn-info .dark-section {
   font-size: 2.5rem;
   color: #f5f6f7;
   padding: 8px 19px;
-  background-color: #f1871d;
+  background-color: #ff914d;
   border-radius: 50%;
 }
 
