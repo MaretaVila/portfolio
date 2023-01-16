@@ -1,6 +1,7 @@
 :root {
   --main-bg-button: #ff5757;
-  --main-text-h2: #ff914d;
+  --main-text: #ff914d;
+  --main-text-h2: #ff5757;
 }
 
 /* navbar */
@@ -37,7 +38,7 @@ p {
 }
 
 a {
-  color: #ff5757;
+  color: #ff914d;
   text-decoration: underline;
 }
 
@@ -48,7 +49,7 @@ a {
   color: #f5f6f7;
   background-color: var(--main-bg-button);
   border: none;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .dark-section {
@@ -123,7 +124,7 @@ a {
 }
 
 .hero-subtitle h2 {
-  color: #ff914d;
+  color: #ff5757;
 }
 
 /* About me section */
