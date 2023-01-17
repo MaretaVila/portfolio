@@ -2,6 +2,7 @@
   --main-bg-button: #ff5757;
   --main-text: #ff914d;
   --main-text-h2: #ff5757;
+  --second-text: #57d8ff;
 }
 
 /* navbar */
@@ -24,7 +25,7 @@ section {
 
 h1 {
   font-size: 2.5rem;
-  font-family: "Quicksand", sans-serif;
+  font-family: "Roboto Mono", monospace;
 }
 
 h2 {
@@ -34,7 +35,8 @@ h2 {
 
 p {
   font-family: "Quicksand", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 a {
@@ -43,7 +45,7 @@ a {
 }
 
 .btn-info {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   font-family: "Roboto Mono", monospace;
   color: #f5f6f7;
@@ -88,14 +90,14 @@ a {
   font-size: 1.2rem;
   letter-spacing: 1px;
   font-family: "Quicksand", sans-serif;
-  font-weight: 200;
+  font-weight: 500;
   height: auto;
 }
 
 /* Section Hero */
 
 .hero {
-  background-color: #f5f6f7;
+  /*background-color: #f5f6f7;*/
   min-height: 450px;
   text-align: center;
 }
@@ -113,12 +115,10 @@ a {
 .hero-principal h2 {
   font-size: 1.5rem;
   color: var(--main-text-h2);
-  font-family: "Roboto Mono", monospace;
-  font-weight: 200;
 }
 
 .hero-inferior {
-  background-color: #f5f6f7;
+  /* background-color: #f5f6f7; */
   width: 60%;
   height: auto;
 }
@@ -237,6 +237,71 @@ a {
   color: #1b1c1e;
   font-size: 50px;
   margin: 10px;
+}
+
+/* Education */
+.education {
+  min-height: 500px;
+  padding: 30px;
+}
+
+.education .card {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px;
+}
+
+.card-header {
+  font-weight: bold;
+}
+
+/* Testimonios */
+
+.testimonios {
+  padding: 40px 40px 80px 40px;
+}
+.testimonios .carousel {
+  max-width: 800px;
+}
+
+.carousel-item {
+  height: 500px;
+}
+
+.carousel-item .container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonio-imagen {
+  height: 150px;
+  width: 150px;
+  margin: 10px 10px 20px 10px;
+}
+
+.testimonio-text {
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+  font-size: "Roboto Mono", monospace;
+}
+
+.testimonio-info {
+  font-weight: bold;
+  text-align: center;
+}
+
+.testimonio-footer .cliente {
+  font-size: 1.2rem;
+}
+
+.testimonio-info .cargo {
+  font-size: 0.9rem;
+  color: #656060;
 }
 
 /* Responsive */
