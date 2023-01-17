@@ -5,6 +5,11 @@
   --second-text: #57d8ff;
 }
 
+.py-5 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
 /* navbar */
 .navbar {
   padding: 2rem;
@@ -280,14 +285,13 @@ a {
 .testimonio-imagen {
   height: 150px;
   width: 150px;
-  margin: 10px 10px 20px 10px;
+  margin: 20px 10px 20px 10px;
 }
 
 .testimonio-text {
-  max-width: 70%;
-  font-size: 20px;
+  max-width: 80%;
+  font-size: 16px;
   text-align: center;
-  font-size: "Roboto Mono", monospace;
 }
 
 .testimonio-info {
@@ -297,6 +301,7 @@ a {
 
 .testimonio-footer .cliente {
   font-size: 1.2rem;
+  font-family: "Roboto Mono", monospace;
 }
 
 .testimonio-info .cargo {
@@ -304,7 +309,63 @@ a {
   color: #656060;
 }
 
+/* Card imagen-texto */
+
+.album {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+.card-body {
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+  padding: 1rem;
+}
+
+.card-text {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.lenguajes {
+  text-align: center;
+}
+
+.d-flex {
+  font-size: 30px;
+}
+
 /* Responsive */
+
+@media (min-width: 768px) {
+  .section.porfolio {
+    min-height: 100vh;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .testimonio-imagen {
+    height: 120px;
+    width: 120px;
+  }
+
+  .testimonio-text {
+    font-size: 12px;
+  }
+}
 
 @media screen and (max-width: 400px) {
   .overlay p {
