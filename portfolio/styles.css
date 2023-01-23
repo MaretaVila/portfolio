@@ -12,7 +12,8 @@
 
 /* navbar */
 .navbar {
-  padding: 2rem;
+  padding: 0.5rem;
+  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 7%);
 }
 
 .navbar-collapse {
@@ -30,18 +31,20 @@ section {
 
 h1 {
   font-size: 2.5rem;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 h2 {
-  font-family: "Quicksand", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 600;
 }
 
 p {
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 0.8rem;
 }
 
 a {
@@ -50,13 +53,19 @@ a {
 }
 
 .btn-info {
-  font-size: 18px;
-  font-weight: 500;
-  font-family: "Roboto Mono", monospace;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: "Lato", sans-serif;
   color: #f5f6f7;
   background-color: var(--main-bg-button);
   border: none;
+  display: inline-block;
   margin-bottom: 40px;
+  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
+  transition: transform 0.3s;
+  padding: 0.5rem 3rem;
 }
 
 .dark-section {
@@ -87,16 +96,34 @@ a {
   padding: 15px 0;
 }
 
+.title-section-footer {
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 15px 0;
+  font-weight: 600;
+}
+
 .description-section {
   font-size: 1.2rem;
   color: #585454;
 }
 .text-section {
-  font-size: 1.2rem;
+  color: #585454;
+  font-size: 1rem;
   letter-spacing: 1px;
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
   height: auto;
+}
+
+.spacer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  border: 1px solid #d1d1d1;
 }
 
 /* Section Hero */
@@ -114,12 +141,11 @@ a {
 .hero-image-developer {
   width: 200px;
   height: 200px;
-  margin: 20px;
+  margin: 0 0 20px;
 }
 
 .hero-principal h2 {
-  font-size: 1.5rem;
-  color: var(--main-text-h2);
+  font-size: 1rem;
 }
 
 .hero-inferior {
@@ -129,16 +155,18 @@ a {
 }
 
 .hero-subtitle h2 {
-  color: #ff5757;
+  color: #1b1c1e;
+  font-weight: 400;
+  margin: 10px;
 }
 
 /* About me section */
 .about-me {
-  padding: 50px;
+  padding: 40px;
 }
 
 .about-me .contenedor {
-  max-width: 900px;
+  max-width: 700px;
   text-align: center;
 }
 
@@ -170,7 +198,7 @@ a {
 }
 
 .badges-contenedor {
-  font-size: 25px;
+  font-size: 18px;
   font-weight: bold;
   margin: 10px 0;
 }
@@ -180,19 +208,58 @@ a {
 }
 
 .experience i {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   color: #f5f6f7;
   padding: 8px 19px;
   background-color: #ff914d;
   border-radius: 50%;
 }
 
-/* Proyects */
-.recent-proyects {
+/* Card imagen-texto */
+
+.album {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+.card-body {
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+  padding: 1rem;
+}
+
+.card-text {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.lenguajes {
+  text-align: center;
+}
+
+.link-group {
+  font-size: 30px;
+}
+
+/* Projects */
+.recent-projects {
   padding: 40px;
 }
 
-.recent-proyects img {
+.recent-projects img {
   width: 100%;
   height: auto;
   padding: 10px;
@@ -201,7 +268,7 @@ a {
   transition: all 0.2s ease;
 }
 
-.proyect-container {
+.project-container {
   padding-top: 60px;
   margin-bottom: 40px;
 }
@@ -260,92 +327,64 @@ a {
   font-weight: bold;
 }
 
-/* Testimonios */
-
-.testimonios {
-  padding: 40px 40px 80px 40px;
-}
-.testimonios .carousel {
-  max-width: 800px;
+/* contacto */
+.contact .container {
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 20px;
 }
 
-.carousel-item {
-  height: 500px;
-}
+/* .contact .rectangulo {
+  margin-top: -2rem;
+  background: rgb(63, 203, 251);
+  background: radial-gradient(
+    circle,
+    rgba(63, 203, 251, 1) 0%,
+    rgba(252, 134, 70, 1) 100%
+  );
+  border-radius: 20px;
+  box-shadow: 0 1px 4px 1px white;
+} */
 
-.carousel-item .container {
+.row {
   width: 100%;
-  height: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-content: center;
+}
+
+.contact .description {
+  color: white;
+  font-size: 10px;
+  letter-spacing: 1px;
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
 
-.testimonio-imagen {
-  height: 150px;
-  width: 150px;
-  margin: 20px 10px 20px 10px;
-}
-
-.testimonio-text {
-  max-width: 80%;
-  font-size: 16px;
-  text-align: center;
-}
-
-.testimonio-info {
+.contact button {
+  color: white;
   font-weight: bold;
-  text-align: center;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 0.75em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
 }
 
-.testimonio-footer .cliente {
-  font-size: 1.2rem;
-  font-family: "Roboto Mono", monospace;
+.contact button i {
+  color: white;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
 }
 
-.testimonio-info .cargo {
-  font-size: 0.9rem;
-  color: #656060;
+.contact button:hover {
+  background-color: white;
+  color: #1b1c1e;
 }
 
-/* Card imagen-texto */
-
-.album {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
-}
-.card-body {
-  font-family: "Roboto Mono", monospace;
-  font-size: 18px;
-  padding: 1rem;
-}
-
-.card-text {
-  font-family: "Quicksand", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-}
-
-.lenguajes {
-  text-align: center;
-}
-
-.d-flex {
-  font-size: 30px;
+.contact button:hover i {
+  color: #1b1c1e;
 }
 
 /* Responsive */
@@ -353,17 +392,6 @@ a {
 @media (min-width: 768px) {
   .section.porfolio {
     min-height: 100vh;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .testimonio-imagen {
-    height: 120px;
-    width: 120px;
-  }
-
-  .testimonio-text {
-    font-size: 12px;
   }
 }
 
@@ -386,7 +414,7 @@ a {
     max-width: 600px;
   }
   .title-section {
-    margin-top: 100px;
+    margin-top: 50px;
   }
 }
 
