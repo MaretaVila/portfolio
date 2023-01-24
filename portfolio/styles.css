@@ -99,7 +99,7 @@ a {
 .title-section-footer {
   color: #ffffff;
   font-family: "Quicksand", sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   padding: 15px 0;
   font-weight: 600;
@@ -123,7 +123,7 @@ a {
   justify-content: center;
   align-items: center;
   width: 70%;
-  border: 1px solid #d1d1d1;
+  border: 1px solid #e9e9e9;
 }
 
 /* Section Hero */
@@ -314,7 +314,7 @@ a {
 /* Education */
 .education {
   min-height: 500px;
-  padding: 30px;
+  padding: 10px;
 }
 
 .education .card {
@@ -334,17 +334,19 @@ a {
   padding: 20px;
 }
 
-/* .contact .rectangulo {
-  margin-top: -2rem;
-  background: rgb(63, 203, 251);
-  background: radial-gradient(
-    circle,
-    rgba(63, 203, 251, 1) 0%,
-    rgba(252, 134, 70, 1) 100%
+.contact .rectangulo {
+  margin-top: -3rem;
+  background-image: radial-gradient(
+    circle 860px at 11.8% 33.5%,
+    rgba(240, 30, 92, 1) 0%,
+    rgba(244, 49, 74, 1) 30.5%,
+    rgba(249, 75, 37, 1) 56.1%,
+    rgba(250, 88, 19, 1) 75.6%,
+    rgba(253, 102, 2, 1) 100.2%
   );
   border-radius: 20px;
   box-shadow: 0 1px 4px 1px white;
-} */
+}
 
 .row {
   width: 100%;
@@ -387,6 +389,38 @@ a {
   color: #1b1c1e;
 }
 
+/* Footer */
+
+.footer {
+  min-height: 500px;
+}
+
+.footer-logo {
+  height: 40px;
+  width: 40px;
+  margin: 10px;
+}
+
+.footer-text {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  padding: 25px;
+  margin-bottom: 30px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  transition: 0.2s ease-in;
+}
 /* Responsive */
 
 @media (min-width: 768px) {
