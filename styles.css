@@ -240,6 +240,20 @@ a {
   padding: 1rem;
 }
 
+.icons-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.icons-media i {
+  font-size: 1.8rem;
+  color: #404040;
+  padding: 12px 10px;
+}
+
 .card-text {
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
