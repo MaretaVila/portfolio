@@ -234,6 +234,14 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
+
+.card:hover {
+  background-color: #f8f9fa;
+  transition: all 0.5s;
+  opacity: 80%;
+  position: static;
+}
+
 .card-body {
   font-family: "Roboto Mono", monospace;
   font-size: 18px;
@@ -298,7 +306,7 @@ a {
 }
 
 .overlay p {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 0;
 }
@@ -321,7 +329,7 @@ a {
 
 .overlay i {
   color: #1b1c1e;
-  font-size: 50px;
+  font-size: 40px;
   margin: 10px;
 }
 
