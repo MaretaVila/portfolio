@@ -93,7 +93,7 @@ a {
 
 .title-section {
   font-size: 2.5rem;
-  padding: 15px 0;
+  padding: 30px 0 0px 0px;
 }
 
 .title-section-footer {
@@ -276,7 +276,7 @@ a {
   font-size: 30px;
 }
 
-/* Projects */
+/* Porfolio */
 .recent-projects {
   padding: 40px;
 }
@@ -378,7 +378,7 @@ a {
 
 .contact .description {
   color: white;
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 1px;
   display: flex;
   justify-content: center;
